@@ -17,3 +17,6 @@ Route::get('desc',function(){
     return Hash::check("password",'$2y$10$3lDG9OnWhDjA7tArus92eep.7Sm6e0etM7j1Wg8ikh2IBhfywrn1y');
     //return Hash::info('$2y$10$3lDG9OnWhDjA7tArus92eep.7Sm6e0etM7j1Wg8ikh2IBhfywrn1y');
 });
+Route::get('info',function(){
+    echo phpinfo();
+});
